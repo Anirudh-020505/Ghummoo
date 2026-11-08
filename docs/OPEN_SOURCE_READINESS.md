@@ -21,8 +21,8 @@
 | | Public demo-admin password closed for new seeds | ✅ |
 | | Existing deployments' admin password rotated | 🧑 |
 | | `npm audit` clean | ✅ 0 vulnerabilities |
-| | `SECURITY.md`, and private vulnerability reporting enabled | ✅ file / 🧑 setting |
-| | Secret scanning and push protection, Dependabot alerts | 🧑 |
+| | `SECURITY.md`, and private vulnerability reporting enabled | ✅ |
+| | Secret scanning and push protection, Dependabot alerts | ✅ on (Dependabot security updates and private vulnerability reporting too) |
 | **Code health** | Tests: 62 unit and API tests (56 server, 6 client) and 25 e2e tests, all passing | ✅ ([TESTING_AND_CI.md](TESTING_AND_CI.md)) |
 | | Lint: 0 errors (50 warnings, tracked as issues) | ✅ |
 | | `/v01` prototype removed or flagged | 🔒 (issue medium/08) |
@@ -33,9 +33,9 @@
 | | Roadmap | ✅ |
 | **GitHub** | CI, CodeQL and Dependabot configuration | ✅ files / 🧑 the first run happens after push |
 | | PR and issue templates, CODEOWNERS | ✅ (both maintainers listed; check `vedansha07` has write access 🧑) |
-| | `staging` branch, branch protection, labels | 🧑 |
-| | Issue drafts ready to publish | ✅ drafts / 🔒 publication |
-| | Repository description and topics | 🟡 drafts in [OPEN_SOURCE_LAUNCH_PLAN.md](OPEN_SOURCE_LAUNCH_PLAN.md) |
+| | `staging` branch, branch protection, labels | ✅ done 8 November 2026: `staging` created; rulesets on `main` and `staging` with empty bypass lists; 15 labels |
+| | Issue drafts ready to publish | ✅ 25 published (#2 to #26); 6 held (operator.js split, GSAP) |
+| | Repository description and topics | ✅ set, and Discussions enabled |
 | **Library** | Grounded-extraction package extracted | ⛔ (hard/01, after the licence) |
 | **Launch** | Announcement drafts | 🟡 |
 | | A maintainer has time committed for responses | 🔒 |
