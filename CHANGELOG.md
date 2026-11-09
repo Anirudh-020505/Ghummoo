@@ -5,6 +5,7 @@ All notable changes are recorded here. The format follows [Keep a Changelog](htt
 ## [Unreleased]
 
 ### Security
+- Email validation can no longer be used to freeze the server (regular-expression DoS found by CodeQL): inputs are capped at 254 characters before matching. Booking `departureId` must be a string; booking references are unbiased; the API accepts JSON bodies only; the Unsplash image check compares the real hostname.
 - In production, the demo admin is no longer seeded with the password published in the README. It gets `DEMO_ADMIN_PASSWORD`, or an explicitly set `DEMO_PASSWORD`, or otherwise a random password. There is a new `npm run set-password --prefix server -- <email>` to secure existing deployments.
 - Organiser and admin list filters reject query-string objects (`?status[$ne]=…`), so MongoDB operators can't be injected.
 - AI Package Studio extraction is limited per account (`AI_EXTRACTIONS_PER_HOUR`, default 30).
